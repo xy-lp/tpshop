@@ -1,0 +1,202 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>购物车页面</title>
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/base.css" type="text/css" />
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/shop_common.css" type="text/css" />
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/shop_header.css" type="text/css" />
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/shop_gouwuche.css" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/topNav.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery.goodnums.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/shop_gouwuche.js" ></script>
+
+    <style type="text/css">
+	.shop_bd_shdz_title{width:1000px; margin-top: 10px; height:50px; line-height: 50px; overflow: hidden; background-color:#F8F8F8;}
+	.shop_bd_shdz_title h3{width:120px; text-align: center; height:40px; line-height: 40px; font-size: 14px; font-weight: bold;  background:#FFF; border:1px solid #E8E8E8; border-radius:4px 4px 0 0; float: left;  position: relative; top:10px; left:10px; border-bottom: none;}
+	.shop_bd_shdz_title p{float: right;}
+	.shop_bd_shdz_title p a{margin:0 8px; color:#555555;}
+
+	.shop_bd_shdz_lists{width:1000px;}
+	.shop_bd_shdz_lists ul{width:1000px;}
+	.shop_bd_shdz_lists ul li{width:980px; border-radius: 3px; margin:5px 0; padding-left:18px; line-height: 40px; height:40px; border:1px solid #FFE580; background-color:#FFF5CC;}
+	.shop_bd_shdz_lists ul li label{color:#626A73; font-weight: bold;}
+	.shop_bd_shdz_lists ul li label span{padding:10px;}
+	.shop_bd_shdz_lists ul li em{margin:0 4px; color:#626A73;}
+
+	.shop_bd_shopping_lists{width:1000px;}
+	.shop_bd_shopping_lists ul{width:1000px;}
+	.shop_bd_shopping_lists ul li{width:980px; border-radius: 3px; margin:5px 0; padding-left:18px; line-height: 40px; height:40px; border:1px solid #cccccc;}
+	.shop_bd_shopping_lists ul li label{color:#626A73; font-weight: bold;}
+	.shop_bd_shopping_lists ul li label span{padding:10px;}
+	.shop_bd_shopping_lists ul li em{margin:0 4px; color:#626A73;}
+
+	.shop_bd_payment_lists{width:1000px;}
+	.shop_bd_payment_lists ul{width:1000px;}
+	.shop_bd_payment_lists ul li{width:980px; border-radius: 3px; margin:5px 0; padding-left:18px; line-height: 40px; height:40px; border:1px solid #cccccc;}
+	.shop_bd_payment_lists ul li label{color:#626A73; font-weight: bold;}
+	.shop_bd_payment_lists ul li label span{padding:10px;}
+	.shop_bd_payment_lists ul li em{margin:0 4px; color:#626A73;}
+
+	.shop_bd_shdz{width:1000px; margin:10px auto 0;}
+	.shop_bd_shdz_new{border:1px solid #ccc; width:998px;}
+	.shop_bd_shdz_new div.title{width:990px; padding-left:8px; line-height:35px; height:35px; border-bottom:1px solid #ccc; background-color:#F2F2F2; font-color:#656565; font-weight: bold; font-size:14px;}
+	.shdz_new_form{width:980px; padding:9px;}
+	.shdz_new_form ul{width:100%;}
+	.shdz_new_form ul li{clear:both; width:100%; padding:5px 0; height:25px; line-height: 25px;}
+	.shdz_new_form ul li label{float:left;width:100px; text-align: right; padding-right: 10px;}
+	.shdz_new_form ul li label span{color:#f00; font-weight: bold; font-size:14px; position: relative; left:-3px; top:2px;}
+    </style>
+
+	<script type="text/javascript">
+	jQuery(function(){
+		jQuery("#new_add_shdz_btn").toggle(function(){
+			jQuery("#new_add_shdz_contents").show(500);
+		},function(){
+			jQuery("#new_add_shdz_contents").hide(500);
+		});
+	});
+	</script>
+</head>
+<body>
+		<!-- Header  -wll-2013/03/24 -->
+	<include file="Public/header"/>
+	<!-- 面包屑 注意首页没有 -->
+	<!--<div class="shop_hd_breadcrumb">
+		<strong>当前位置：</strong>
+		<span>
+			<a href="">首页</a>&nbsp;›&nbsp;
+			<a href="">我的商城</a>&nbsp;›&nbsp;
+			<a href="">我的购物车</a>
+		</span>
+	</div>
+	<div class="clear"></div>-->
+	<!-- 面包屑 End -->
+
+	<!-- Header End -->
+	
+	<!-- 购物车 Body -->
+	<div class="shop_gwc_bd clearfix">
+		<div class="shop_gwc_bd_contents clearfix">
+			<!-- 购物流程导航 -->
+			<div class="shop_gwc_bd_contents_lc clearfix">
+				<ul>
+					<li class="step_a">确认购物清单</li>
+					<li class="step_b hover_b">确认收货人资料及送货方式</li>
+					<li class="step_c">购买完成</li>
+				</ul>
+			</div>
+			<!-- 购物流程导航 End -->
+				
+		<form id="frm" action="__URL__/flow" method="post">
+			<div class="clear"></div>
+			<!-- 收货地址 title -->
+			<div class="shop_bd_shdz_title">
+				<h3>收货人地址</h3>
+				<p><a href="javasrcipt:void(0);" id="new_add_shdz_btn">新增收货地址</a><a href="javascript:void(0);">管理收货地址</a></p>
+			</div>
+			<div class="clear"></div>
+			<!-- 收货人地址 Title End -->
+			<div class="shop_bd_shdz clearfix">
+				<div class="shop_bd_shdz_lists clearfix">
+					<ul>
+						<volist name="address" id="vo">
+							<li><label>寄送至：<span><input type="radio" name="address_id" value="{$vo.id}" checked="" /></span></label><em>{$vo.address}</em><em>{$vo.consignee}(收)</em><em>{$vo.mobile}</em></li>
+						</volist>
+					</ul>
+				</div>
+
+			<div class="clear"></div>
+			<!-- 配送方式 shipping Start -->
+			<div class="shop_bd_shdz_title">
+				<h3>配送方式</h3>
+			</div>
+			<div class="clear"></div>
+			<div class="shop_bd_shdz clearfix">
+				<div class="shop_bd_shopping_lists clearfix">
+					<ul>
+						<li><input type="radio" name="shipping" value="1" checked=""/>申通快递</li>
+						<li><input type="radio" name="shipping" value="2"/>顺丰快递</li>
+						<li><input type="radio" name="shipping" value="3"/>圆通快递</li>
+						<li><input type="radio" name="shipping" value="4"/>韵达快递</li>
+					</ul>
+				</div>
+				</div>
+			<!-- 配送方式 shipping End -->
+
+			<div class="clear"></div>
+			<!-- 支付方式 shipping Start -->
+			<div class="shop_bd_shdz_title">
+				<h3>支付方式</h3>
+			</div>
+			<div class="clear"></div>
+			<div class="shop_bd_shdz clearfix">
+				<div class="shop_bd_payment_lists clearfix">
+					<ul>
+						<li><input type="radio" name="payment" value="1" checked=""/>在线支付</li>
+						<li><input type="radio" name="payment" value="2"/>银行转账</li>
+						<li><input type="radio" name="payment" value="3"/>货到付款</li>
+					</ul>
+				</div>
+				<!-- 支付方式 shipping End -->
+			</div>
+			<div class="clear"></div>
+			<!-- 购物车列表 -->
+			<div class="shop_bd_shdz_title">
+				<h3>确认购物清单</h3>
+			</div>
+			<div class="clear"></div>
+			<table>
+				<thead>
+					<tr>
+						<th><span></span></th>
+						<th><span>商品</span></th>
+						<th><span>单价(元)</span></th>
+						<th><span>数量</span></th>
+						<th><span>小计</span></th>
+					</tr>
+				</thead>
+				<tbody>
+<volist name="cart_data" id="vo">
+					<tr>
+						<td class="gwc_list_pic"><a href=""><img src="__PUBLIC__/Uploads/{$vo['info'].image_thumb}" /></a></td>
+						<td class="gwc_list_title"><span>{$vo['info'].goods_name}</span></td>
+						<td class="gwc_list_danjia">￥<span>{$vo['info'].shop_price}</span></td>
+						<td class="gwc_list_shuliang"><span>{$vo.goods_nums}</span></td>
+						<td class="gwc_list_xiaoji" style="color: red">￥<span><?php echo $vo['goods_nums']*$vo['info']['shop_price']?></span></td>
+					</tr>
+</volist>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="5">
+							<div class="gwc_foot_zongjia">商品总价(不含运费)<span>￥<strong id="good_zongjia">{$getCartTotal.total_price}</strong></span></div>
+							<input type="hidden" name="goods_amount" value="{$getCartTotal.total_price}"/>
+							<div class="clear"></div>
+							<div class="gwc_foot_links">
+								<a href="__MODULE__/Cart/cartlist" class="go">返回上一步</a>
+								<a href="javascript:" onclick="orderSubmit()" class="op">提交订单</a>
+							</div>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+			<!-- 购物车列表 End -->
+			</form>
+		</div>
+	</div>
+	<!-- 购物车 Body End -->
+
+	<!-- Footer - wll - 2013/3/24 -->
+	<include file="Public/footer"/>
+	<!-- Footer End -->
+
+</body>
+</html>
+<script type="text/javascript">
+	function orderSubmit(){
+		var frm=document.getElementById('frm');
+		frm.submit();
+	}
+</script>

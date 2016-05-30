@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>ECSHOP 管理中心 - 添加订单 </title>
+    <meta name="robots" content="noindex, nofollow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="styles/general.css" rel="stylesheet" type="text/css">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+
+<h1>
+    <span class="action-span1"><a href="index.php?act=main">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 添加订单 </span>
+    <div style="clear:both"></div>
+</h1>
+<form name="theForm" action="order.php?act=step_post&amp;step=edit_goods&amp;order_id=21&amp;step_act=add" method="post">
+    <div class="list-div">
+        <table cellpadding="3" cellspacing="1">
+            <tbody><tr>
+                <th scope="col">商品名称</th>
+                <th scope="col">货号</th>
+                <th scope="col">价格</th>
+                <th scope="col">数量</th>
+                <th scope="col">属性</th>
+                <th scope="col">小计</th>
+                <th scope="col">操作</th>
+            </tr>
+            <tr>
+                <td colspan="4"><span class="require-field">备注：商品价格中已包含属性加价</span></td>
+                <td align="right"><strong>合计：</strong></td>
+                <td align="right">0</td>
+                <td>    <input name="goods_count" type="hidden" value="0"></td>
+            </tr>
+            </tbody></table>
+    </div>
+</form>
+
+<form name="goodsForm" action="order.php?act=step_post&amp;step=add_goods&amp;order_id=21&amp;step_act=add" method="post" onsubmit="return addToOrder()">
+    <p>
+        按商品编号或商品名称或商品货号搜索  <input type="text" name="keyword" value="">
+        <input type="button" name="search" value=" 搜索 " onclick="searchGoods();">
+        <select name="goodslist" onchange="getGoodsInfo(this.value)"></select>
+    </p>
+    <div class="list-div">
+        <table cellpadding="3" cellspacing="1">
+            <tbody><tr>
+                <th width="100">商品名称</th>
+                <td id="goods_name">&nbsp;</td>
+            </tr>
+            <tr>
+                <th>货号</th>
+                <td id="goods_sn">&nbsp;</td>
+            </tr>
+            <tr>
+                <th>分类</th>
+                <td id="goods_cat">&nbsp;</td>
+            </tr>
+            <tr>
+                <th>品牌</th>
+                <td id="goods_brand">&nbsp;</td>
+            </tr>
+            <tr>
+                <th>价格</th>
+                <td id="add_price">&nbsp;</td>
+            </tr>
+            <tr>
+                <th>属性<input type="hidden" name="spec_count" value="0"></th>
+                <td id="goods_attr">&nbsp;</td>
+            </tr>
+            <tr>
+                <th>数量</th>
+                <td><input name="add_number" type="text" value="1" size="10"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input name="add_goods" type="submit" value="加入订单"></td>
+            </tr>
+            </tbody></table>
+    </div>
+</form>
+<form action="order.php?act=step_post&amp;step=goods&amp;order_id=21&amp;step_act=add" method="post" onsubmit="return checkGoods()">
+    <p align="center">
+        <input name="next" type="submit" class="button" value="下一步">
+        <input type="button" value="取消" class="button" onclick="location.href='order.php?act=process&amp;func=cancel_order&amp;order_id=21&amp;step_act=add'">
+    </p>
+</form>
+
+<div id="footer">
+    共执行 4 个查询，用时 0.028002 秒，Gzip 已禁用，内存占用 4.617 MB<br>
+    版权所有 © 2005-2012 上海商派网络科技有限公司，并保留所有权利。</div>
+
+
+</body></html>

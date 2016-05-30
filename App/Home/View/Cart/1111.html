@@ -1,0 +1,326 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sanatana HTML Version - Contacts</title>
+<meta name="description" content="Default Description" />
+<meta name="keywords" content="Santana, Varien, E-commerce" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<script type="text/javascript" src="../../../../Public/Home/js/jquery-1.8.3.min.js"></script>
+
+<script type="text/javascript">
+        $(function(){
+          //选择'+'按钮，使用'.incr'来选择
+             $(".incr").click(function(){
+                 alert(1111);
+                //计算商品的单价
+                var danjia=$(this).parent().parent().find("td:eq(2)").html();
+                
+                //找出原来的购买量
+                var goods_count=parseInt($(this).parent().find("input[name=goods_count]").val());
+                //新的购买数量
+                var new_goods_count=goods_count+1;
+                //找出原来的小计价格
+                var xiaoji_price=parseFloat($(this).parent().parent().find('td:eq(4)').html());
+                //新的小计价格
+                var new_xiaoji_price=xiaoji_price+danjia;
+                //找出原来的总的购买金额
+                var total_price=parseFloat($('.required').html());
+                //新的总金额
+                var new_total_price=total_price+danjia;
+                //获取商品的goods_idhe goods_attr_id的值
+                var goods_id = $(this).parent().find("input[name=goods_id]").val();
+                var goods_attr_id = $(this).parent().find("input[name=goods_attr_id]").val();
+                //使用ajax来完成修改数据库的操作
+                var _this=$(this);
+                $.ajax({
+                     type:'get',
+                     url:'__CONTROLLER__/updateCart/goods_id/'+goods_id+'/goods_attr_id/'+goods_attr_id,
+                     success:function(msg){
+                           if(msg=='ok'){
+                            //成功，把新的值赋予页面中
+                             _this.parent().find("input[name=goods_count]").val(new_goods_count);
+                              _this.parent().parent().find("span:eq(4)").html(new_xiaoji_price);
+                              $(".required").html(new_total_price)
+                                 }
+                                    }
+                    });
+            });
+        });
+    </script>
+</head>
+   
+<body id="bg_color" class=" cms-index-index cms-home">
+<!--START OF WRAPPER-->
+<div class="wrapper">
+  <div class="page"> 
+    
+    <!--START OF HEADER-->
+    <div class="header-container">
+  <include file='Public/header' />
+      <!--Start Header Content-->
+      <div class="header">
+        <ul id="logo">
+          <!--Left-->
+          <li class="head-container"> <span>{</span>
+            <h2 class="classy">Free shipping over $9.99</h2>
+            <span>}</span>
+            <p class="top-welcome-msg">Default welcome msg!</p>
+          </li>
+          <!--Left--> 
+          <!--Center Logo-->
+          <li class="logo-box">
+            <h1 class="logo"><strong>Santana Commerce</strong><a href="#" title="Santana Commerce" class="logo"><img src="__PUBLIC__/Home/images/logo.png" alt="Santana Commerce" /></a></h1>
+          </li>
+          <!--Center Logo--> 
+          
+          <!--Right-->
+          <li class="head-container"> <span>{</span>
+            <h2 class="classy">Call us - +1 999 999 9999</h2>
+            <span>}</span>
+            <div id="search-bar">
+              <div class="top-bar">
+                <form id="search_mini_form" action="#">
+                  <div class="form-search">
+                    <input
+                     onfocus="if(this.value=='Search') {this.value=''};" onblur="if(this.value=='') {this.value='Search'};"
+                     id="search" name="q" value="Search" class="input-text" type="text" />
+                    <button type="submit" title="Go" class="button">Go</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </li>
+          <!--Right-->
+        </ul>
+        <!--Start of Navigation-->
+        <include file='Public/nav' />
+        <!--End of Navigation--> 
+      </div>
+      <!--End Header Content--> 
+    </div>
+    <!--END OF HEADER--> 
+    
+    <!--START OF MAIN CONTENT-->
+    <div class="main-container col2-left-layout">
+      <div class="main">
+        <div class="col-main">
+          <div id="messages_product_view"></div>
+          <!--Page Title-->
+          <div class="page-title">
+            <h1>购物流程</h1>
+          </div>
+          <!--Start of Contact Form-->
+          <form  id="contactForm" method="post" action="#">
+            <div class="fieldset">
+              <h2 class="legend">购物车列表</h2>
+              <table width="100%">
+                        <tr style="height:30px">
+                                <th>商品名称</th>
+                                <th>属性</th>
+                                <th>价格</th>
+                                <th>购买数量</th>
+                                <th>小计</th>
+                                <th>操作</th>
+                            </tr>
+                            <?php foreach($cartdata as $v){?>
+                            <tr>
+                                <td align="center">
+                                    <a href="#" target="_blank"><img style="width: 80px; height: 80px;" src="<?php echo C('IMG_SRC').$v['info']['goods_thumb']?>" title="P806" /></a><br />
+                                    <a href="#" target="_blank" class="f6"><?php echo $v['info']['goods_name']?></a>
+                                </td>
+                                <td><?php echo $v['attrs']?> <br />
+                                </td>                         
+                                <td align="center">￥<?php echo $v['info']['price']?>元</td>
+                                <td align="center">
+                                    <a href="javascript:" class="decr"><img src="__PUBLIC__/Home/images/decr.gif"/></a><input name="goods_count" id="goods_number_43" value="<?php echo $v['goods_count']?>" size="4" class="inputBg" style="text-align: center;" onkeydown="showdiv(this)" type="text" /><a href="javascript:" class="incr"><img src="__PUBLIC__/Home/images/incr.gif"/></a>
+                                    <input type="hidden" name="goods_id" value="<?php echo $v['goods_id']?>"/>
+                                    <input type="hidden" name="goods_attr_id" value="<?php echo $v['goods_attr_id']?>"/>
+                                </td>
+                                <td align="center">￥<?php echo $v['info']['price']*$v['goods_count']?>元</td>
+                                <td align="center">
+                                    <a href="#" class="f6">删除</a>
+                                </td>
+                            </tr>
+                            <?php }?>
+                        </table>         
+            </div>
+            <div class="buttons-set">
+              <p class="required">购物金额小计 ￥<?php echo $total['total_price']?>元</p>
+              <input name="hideit" id="hideit" style="display: none ! important;" type="text" />
+              <button type="submit" title="Submit" class="button"><span><span>清空购物车</span></span></button>
+               <button type="submit" title="Submit1" class="button"><span><span>更新购物车</span></span></button>
+            </div>
+          </form>
+          <!--End of Contact Form-->  
+        </div>
+        <div class="col-left sidebar"> 
+          <!--Start of Compare Products-->
+          <div class="block block-list block-compare">
+            <div class="block-title"> <strong><span>Compare Products </span></strong> </div>
+            <div class="block-content">
+              <p class="empty">You have no items to compare.</p>
+            </div>
+          </div>
+          <!--Start of Compare Products--> 
+          
+          <!--Start of Poll-->
+          <div class="block block-poll">
+            <div class="block-title"> <strong><span>Community Poll</span></strong> </div>
+            <form id="pollForm" method="post" onsubmit="return validatePollAnswerIsSelected();" action="#">
+              <div class="block-content">
+                <p class="block-subtitle">What is your favorite Santana feature?</p>
+                <ul id="poll-answers">
+                  <li class="odd">
+                    <input name="vote" class="radio poll_vote" id="vote_5" value="5" type="radio" />
+                    <span class="label">
+                    <label for="vote_5">Layered Navigation</label>
+                    </span> </li>
+                  <li class="even">
+                    <input name="vote" class="radio poll_vote" id="vote_6" value="6" type="radio" />
+                    <span class="label">
+                    <label for="vote_6">Price Rules</label>
+                    </span> </li>
+                  <li class="odd">
+                    <input name="vote" class="radio poll_vote" id="vote_7" value="7" type="radio" />
+                    <span class="label">
+                    <label for="vote_7">Category Management</label>
+                    </span> </li>
+                  <li class="last even">
+                    <input name="vote" class="radio poll_vote" id="vote_8" value="8" type="radio" />
+                    <span class="label">
+                    <label for="vote_8">Compare Products</label>
+                    </span> </li>
+                </ul>
+                <div class="actions">
+                  <button type="submit" title="Vote" class="button"><span><span>Vote</span></span></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--End of Poll--> 
+        </div>
+      </div>
+      <div style="display: none;" id="back-top"> <a href="#"><img alt="" src="__PUBLIC__/Home/images/backtop.gif" /></a> </div>
+    </div>
+    <!--END OF MAIN CONTENT--> 
+    
+    <!--START OF FOOTER-->
+    <div class="footer-container">
+      <div class="footer">
+        <div class="f-fix">
+          <div class="frame">.</div>
+          <!--Shipping Block-->
+          <div class="free-shipping">Enjoy free shipping <span>on all orders as our holiday gift for you!</span></div>
+          <!--Shipping Block--> 
+          
+          <!--Newsletter-->
+          <form method="post" id="newsletter-validate-detail" action="#">
+            <div class="form-subscribe">
+              <div class="form-subscribe-header">Sign up for newsletter</div>
+              <div class="input-box">
+                <input 
+                onfocus="if(this.value=='Enter email address') {this.value=''};" onblur="if(this.value=='') {this.value='Enter email address'};"
+                value="Enter email address" name="email" id="newsletter" title="Sign up for newsletter" class="input-text required-entry validate-email" type="text" />
+                <button type="submit" title="Submit" class="button"><span>Submit</span></button>
+              </div>
+            </div>
+          </form>
+          <!--Newsletter--> 
+        </div>
+        <div class="f-left bottom_links">
+          <div class="footer-content">
+            <div class="block_1">
+              <h3>About us</h3>
+              <!--Footer links-->
+              <ul class="footer_links">
+                <li> <a href="#">About Us</a></li>
+                <li> <a href="#">Customer Service</a></li>
+                <li> <a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="block_1">
+              <h3>Customer Services</h3>
+              <!--Footer links-->
+              <ul class="footer_links">
+                <li> <a href="#">Shipping &amp; Returns</a></li>
+                <li> <a href="#">Secure Shopping</a></li>
+                <li> <a href="#">Contact us</a></li>
+              </ul>
+            </div>
+            <div class="block_1"> 
+              <!--Footer links-->
+              <h3>Terms &amp; Conditions</h3>
+              <ul class="footer_links">
+                <li> <a href="#">Press Room</a></li>
+                <li> <a href="#">Help</a></li>
+                <li> <a href="#">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+            <div class="block_2">
+              <h3>Connect &amp; Share</h3>
+              <!--Social links-->
+              <div class="social_box">
+                <div class="facebook"><a title="Facebook" href="#"></a></div>
+                <div class="twitter"><a title="Twitter" href="#"></a></div>
+                <div class="linkedin"><a title="Linkedin" href="#"></a></div>
+                <div class="youtube"><a title="Youtube" href="#"></a></div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <address>
+      &copy; Copyright &copy; 2013.Company name All rights reserved.<a target="_blank" href="http://www.cssmoban.com/" title="模板之家">模板之家</a> Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a>
+      </address>
+    </div>
+    <!--END OF FOOTER--> 
+  </div>
+ <script type="text/javascript">
+	 var minicart_timer;
+    jQuery(".trigger-minicart").hover(function(){
+        jQuery("#minicart").slideDown();
+    });
+    jQuery("#minicart").mouseleave(function(){
+        jQuery("#minicart").slideUp();
+    });
+    jQuery("#minicart").hover(function(){
+        clearTimeout(minicart_timer);
+    });
+	jQuery(document).ready(function(){
+	jQuery('.pagebox_btn').click(function(){
+		if(parseInt(jQuery('.page_pan').css('left')) < 0)
+		{
+			jQuery('.page_pan').animate({ left: '0' }, 600, 'easeOutQuint');
+		}
+		else{
+			jQuery('.page_pan').animate({ left: '-100px' }, 600, 'easeOutQuint');
+			}
+		});
+		});
+</script>
+</div>
+<!--pages box-->
+<div class="page_pan" style="left:-100px;">
+	<div class="page_box">
+    	<a href="index-2.html">Home</a>
+        <a href="category.html">Category</a>
+        <a href="product.html">Product</a>
+        <a href="checkout.html">Checkout</a>
+        <a href="contacts.html">Contact us</a>
+    </div>
+    <div class="pagebox_btn">
+    	<span>P</span>
+        <span>A</span>
+        <span>G</span>
+        <span>E</span>
+        <span>S</span>
+    </div>
+</div>
+<!--end pages box-->
+<!--END OF WRAPPER-->
+
+</body>
+</html>

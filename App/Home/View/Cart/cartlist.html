@@ -1,0 +1,179 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>购物车页面</title>
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/base.css" type="text/css" />
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/shop_common.css" type="text/css" />
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/shop_header.css" type="text/css" />
+	<link rel="stylesheet" href="__PUBLIC__/Home/css/shop_gouwuche.css" type="text/css" />
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/topNav.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery.goodnums.js" ></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/shop_gouwuche.js" ></script>
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//选择“-”，用获取class的方式选取
+			$(".decr").click(function(){
+				var otr=$(this).parent().parent().parent();
+				//商品的单价
+				var danjia=parseFloat(otr.find('span:first').html());
+				//获取商品数量
+				var num=parseInt(otr.find('input[name=good_nums]').val());
+				//获取小计价格
+				var count_price=parseFloat(otr.find('span:last').html());
+				//商品的id
+				var goods_id=otr.find("input[name=goods_id]").val();
+				//商品的属性id
+				var goods_attr_id=otr.find("input[name=goods_attr_id]").val();
+				//商品新的数量
+				var new_num=num-1;
+				//商品新的小计价格
+				var new_price=count_price-danjia;
+				//使用ajax来完成修改数据库的操作
+				$.ajax({
+					type:'get',
+					url:'__URL__/updateCart/goods_id/'+goods_id+'/goods_attr_id/'+goods_attr_id+'/p/1',
+					success:function(msg){
+						//console.log(msg);
+						if(msg=='ok'){
+							//成功，将新值赋给相应的表单
+							otr.find('input[name=good_nums]').val(new_num);
+							otr.find('span:last').html(new_price);
+						}else{
+							alert(0);
+						}
+					}
+				});
+			});
+			//选择“+”，用获取class的方式选取
+			$(".incr").click(function(){
+				var otr=$(this).parent().parent().parent();
+				//商品的单价
+				var danjia=parseFloat(otr.find('span:first').html());
+				//获取商品数量
+				var num=parseInt(otr.find('input[name=good_nums]').val());
+				//获取小计价格
+				var count_price=parseFloat(otr.find('span:last').html());
+				//商品的id
+				var goods_id=otr.find("input[name=goods_id]").val();
+				//商品的属性id
+				var goods_attr_id=otr.find("input[name=goods_attr_id]").val();
+				//商品新的数量
+				var new_num=num+1;
+				//商品新的小计价格
+				 var new_price=count_price+danjia;
+				//使用ajax来完成修改数据库的操作
+				$.ajax({
+					type:'get',
+					url:'__URL__/updateCart/goods_id/'+goods_id+'/goods_attr_id/'+goods_attr_id+'/p/0',
+					success:function(msg){
+						//console.log(msg);
+						if(msg=='ok'){
+							//成功，将新值赋给相应的表单
+							otr.find('input[name=good_nums]').val(new_num);
+							otr.find('span:last').html(new_price);
+						}else{
+							alert(0);
+						}
+					}
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+		<!-- Header  -wll-2013/03/24 -->
+	<include file="Public/header"/>
+	<!-- 面包屑 注意首页没有
+	<div class="shop_hd_breadcrumb">
+		<strong>当前位置：</strong>
+		<span>
+			<a href="">首页</a>&nbsp;›&nbsp;
+			<a href="">我的商城</a>&nbsp;›&nbsp;
+			<a href="">我的购物车</a>
+		</span>
+	</div>
+	<div class="clear"></div>
+	 面包屑 End -->
+
+	<!-- Header End -->
+	
+	<!-- 购物车 Body -->
+	<div class="shop_gwc_bd clearfix">
+		<!-- 在具体实现的时候，根据情况选择其中一种情况 -->
+		<!-- 购物车为空 -->
+			<div class="empty_cart mb10" style="display: <?php echo 'none'?>">
+				<div class="message">
+					<p>购物车内暂时没有商品，您可以<a href="index.html">去首页</a>挑选喜欢的商品</p>
+				</div>
+			</div>
+		<!-- 购物车为空 end-->
+		
+		<!-- 购物车有商品 -->
+		<div class="shop_gwc_bd_contents clearfix">
+			<!-- 购物流程导航 -->
+			<div class="shop_gwc_bd_contents_lc clearfix">
+				<ul>
+					<li class="step_a hover_a">确认购物清单</li>
+					<li class="step_b">确认收货人资料及送货方式</li>
+					<li class="step_c">购买完成</li>
+				</ul>
+			</div>
+			<!-- 购物流程导航 End -->
+
+			<!-- 购物车列表 -->
+			<table>
+				<thead>
+					<tr>
+						<th style="width: 1%"><input type="checkbox" name="boxAll[]" /></th>
+						<th colspan="2"><span>商品</span></th>
+						<th><span>商品属性</span></th>
+						<th><span>单价(元)</span></th>
+						<th><span>数量</span></th>
+						<th><span>小计</span></th>
+						<th><span>操作</span></th>
+					</tr>
+				</thead>
+				<tbody>
+<volist name="cart_list" id="vo">
+				<tr>
+					<td style="width: 1%"><input type="checkbox" name="box[]" /></td>
+					<td class="gwc_list_pic" style="width: 10%"><a href=""><img src="__PUBLIC__/Uploads/{$vo['info'].image_thumb}" /></a></td>
+					<td class="gwc_list_title" style="width: 25%"><a href="">{$vo['info'].goods_name}</a><input type="hidden" name="goods_id" value="{$vo.goods_id}"/></td>
+					<td class="gwc_list_attr" style="width: 18%"><a href="">{$vo.attrs}</a></td><input type="hidden" name="goods_attr_id" value="{$vo.goods_attr_id}"/>
+					<td class="gwc_list_danjia" style="width: 10%">￥<span>{$vo['info'].shop_price}</span></td>
+					<td class="gwc_list_shuliang" style="width: 10%"><span><a class="decr" href="javascript:">-</a><input type="text" value="{$vo.goods_nums}" name="good_nums" id="good_nums" class="good_nums" /><a class="incr" href="javascript:">+</a></span></td>
+					<td class="gwc_list_xiaoji" style="width: 10%">￥<span><?php echo $vo['goods_nums']*$vo['info']['shop_price']?></span></td>
+					<td class="gwc_list_caozuo" style="width: 15%"><a href="">收藏</a><a href="__URL__/delCart/goods_id/{$vo.goods_id}/goods_attr_id/{$vo.goods_attr_id}" onclick="return confirm('你确定要删除吗？')">删除</a></td>
+				</tr>
+</volist>
+					
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="8">
+							<div class="gwc_foot_zongjia">商品总价(不含运费)<span>￥<strong id="good_zongjia">{$getCartTotal.total_price}</strong></span></div>
+							<div class="clear"></div>
+							<div class="gwc_foot_links">
+								<a href="/index.php" class="go">继续购物</a>
+								<a href="__MODULE__/Order/addOrder" class="op">确认并填写订单</a>
+							</div>
+						</td>
+					</tr>
+				</tfoot>
+			</table>
+			<!-- 购物车列表 End -->
+		</div>
+		<!-- 购物车有商品 end -->
+
+	</div>
+	<!-- 购物车 Body End -->
+
+	<!-- Footer - wll - 2013/3/24 -->
+		<include file="Public/footer"/>
+	<!-- Footer End -->
+
+</body>
+</html>

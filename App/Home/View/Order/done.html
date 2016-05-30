@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<form method="post" action="__MODULE__/Pay/pay">
+    <input type="hidden" name="order_sn" value="{$order_data.order_sn}"/>
+    <input type="hidden" name="goods_amount" value="{$order_data.goods_amount}"/>
+    订单编号：{$order_data.order_sn}<br/>
+    订单金额：{$order_data.goods_amount}<br/>
+    <input type="submit" value="立即支付">
+</form>
+</body>
+</html>

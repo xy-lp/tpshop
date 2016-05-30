@@ -1,0 +1,20 @@
+<!-- 热卖推荐商品 -->
+<div class="shop_bd_list_bk clearfix">
+    <div class="title">热卖推荐商品</div>
+    <div class="contents clearfix">
+        <ul class="clearfix">
+            <volist name="best_good" id="bgvo">
+                <li class="clearfix">
+                    <div class="goods_name"><a href="__URL__/good/id/{$bgvo.id}">{$bgvo.goods_name}</a></div>
+                    <div class="goods_pic"><span class="goods_price">¥ {$bgvo.shop_price} </span><a href="__URL__/good/id/{$bgvo.id}"><img src="__PUBLIC__/Uploads/{$bgvo.image_thumb}" /></a></div>
+                    <div class="goods_xiaoliang">
+                        <span class="goods_xiaoliang_link"><a href="__URL__/good/id/{$bgvo.id}">去看看</a></span>
+                        <span class="goods_xiaoliang_nums">已销售<strong>99</strong>笔</span>
+                    </div>
+                </li>
+            </volist>
+
+        </ul>
+    </div>
+</div>
+<!-- 热卖推荐商品 -->

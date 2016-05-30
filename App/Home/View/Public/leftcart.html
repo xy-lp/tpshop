@@ -1,0 +1,13 @@
+<div class="shop_bd_list_bk clearfix">
+<div class="title">商品分类</div>
+<div class="contents clearfix">
+    <dl class="shop_bd_list_type_links clearfix">
+        <dt><strong>{$cat_parent.cat_name}</strong></dt>
+        <dd>
+            <volist name="cat_child" id="vo">
+                <span><a href="__URL__/goodslist/id/{$vo.cat_id}">{$vo.cat_name}</a></span>
+            </volist>
+        </dd>
+    </dl>
+</div>
+</div>

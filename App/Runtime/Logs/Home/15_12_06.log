@@ -1,0 +1,1877 @@
+[ 2015-12-06T16:08:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.1140s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.1160s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0090s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `grade` = 0 AND `is_show` = 1 ORDER BY sort_order LIMIT 8   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `grade` = 1 AND `is_show` = 1 ORDER BY sort_order  [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `grade` = 2 AND `is_show` = 1 ORDER BY sort_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.4000s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.1010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:08:44+08:00 ] 127.0.0.1 /index.php/Home/Index/goodslist/id/50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `cat_id` = 50 ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 50 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 15 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\b202b53ab2d42fc87b75d93984aef4cb.php 第 231 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T16:08:48+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0670s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.1090s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0440s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: radiodata D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 278 行.
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-06T16:10:11+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:10:12+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 31 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=31 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 31  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 31 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 16 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: radiodata D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 278 行.
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-12-06T16:10:15+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:10:16+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 30 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=30 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 30  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 30 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 16 AND `is_show` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: radiodata D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 278 行.
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T16:10:21+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:10:27+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 29 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=29 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 29  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 29 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 15 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: radiodata D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 278 行.
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:12:04+08:00 ] 127.0.0.1 /index.php/Home/Personal/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\0160346908693bf1edbb804ec8e3d100.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:12:06+08:00 ] 127.0.0.1 /index.php/Home/personal/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\0160346908693bf1edbb804ec8e3d100.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T16:12:08+08:00 ] 127.0.0.1 /index.php/Home/personal/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\0160346908693bf1edbb804ec8e3d100.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:12:09+08:00 ] 127.0.0.1 /index.php/Home/Favorite/favorite
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\480bd095d655abd5f709559cf969d9a0.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T16:12:10+08:00 ] 127.0.0.1 /index.php/Home/personal/comment
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\7abb9807b9af2589dabb7c2b1e5f1a79.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T16:12:11+08:00 ] 127.0.0.1 /index.php/Home/personal/member_info
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\79f52df52e7c025b5455fc01f27d32be.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:12:12+08:00 ] 127.0.0.1 /index.php/Home/personal/password_eidt
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\06287bc698e55899a6f4760aaeb08b2b.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T16:12:13+08:00 ] 127.0.0.1 /index.php/Home/Address/address
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0030s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\bb97641a72c4ef20fd10d766f036e7cc.php 第 175 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:12:15+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:12:23+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0070s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0070s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: radiodata D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 278 行.
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T16:16:21+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0120s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-06T16:17:33+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:18:23+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 56 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-12-06T16:18:59+08:00 ] 127.0.0.1 /index.php/Home/Personal/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\0160346908693bf1edbb804ec8e3d100.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:20:19+08:00 ] 127.0.0.1 /index.php/Home/Personal/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\0160346908693bf1edbb804ec8e3d100.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T16:20:21+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:20:23+08:00 ] 127.0.0.1 /index.php/Home/cart/cartlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\dd774395c89e25c74eb2a82211b6d549.php 第 247 行.
+NOTIC: [8] Undefined variable: getCartTotal D:\vhosts\tpshop\App\Runtime\Cache\Home\dd774395c89e25c74eb2a82211b6d549.php 第 320 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T16:20:24+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T16:20:26+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0000s ]
+
+[ 2015-12-06T16:39:20+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0010s ]
+
+[ 2015-12-06T17:01:11+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0430s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T17:03:38+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T17:03:54+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T17:03:58+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0420s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T17:06:30+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 60 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T17:21:03+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0040s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T17:21:04+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T17:23:21+08:00 ] 127.0.0.1 /index.php/Home/Index/goodslist/id/50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `cat_id` = 50 ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0040s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 50 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 15 AND `is_show` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\b202b53ab2d42fc87b75d93984aef4cb.php 第 231 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T17:23:27+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 30 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=30 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 30  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 30 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 16 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T17:23:33+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T17:23:43+08:00 ] 127.0.0.1 /index.php/Home/Personal/member
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\0160346908693bf1edbb804ec8e3d100.php 第 174 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-06T18:17:24+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T18:17:26+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 31 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=31 [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 31  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 31 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 16 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0060s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T18:59:19+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 31 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=31 [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 31  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0040s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 31 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 16 AND `is_show` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.053003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T18:59:36+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0050s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T20:10:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.070004s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0380s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.1500s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0100s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `grade` = 0 AND `is_show` = 1 ORDER BY sort_order LIMIT 8   [ RunTime:0.0690s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `grade` = 1 AND `is_show` = 1 ORDER BY sort_order  [ RunTime:0.0000s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `grade` = 2 AND `is_show` = 1 ORDER BY sort_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0930s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0630s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.308017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.308017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-06T23:35:35+08:00 ] 127.0.0.1 /index.php/Home/Index/goodslist/id/50
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0150s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `cat_id` = 50 ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0080s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 50 LIMIT 1   [ RunTime:0.0260s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 15 AND `is_show` = 1  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\b202b53ab2d42fc87b75d93984aef4cb.php 第 231 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.082005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-06T23:43:43+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T23:50:17+08:00 ] 127.0.0.1 /index.php/Home/cart/cartlist
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\dd774395c89e25c74eb2a82211b6d549.php 第 247 行.
+NOTIC: [8] Undefined variable: getCartTotal D:\vhosts\tpshop\App\Runtime\Cache\Home\dd774395c89e25c74eb2a82211b6d549.php 第 320 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T23:50:20+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_hot` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_new` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 4   [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T23:50:22+08:00 ] 127.0.0.1 /index.php/Home/Index/good/id/32
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `tp_goods` WHERE `id` = 32 AND `is_del` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select a.id,a.attr_id,a.attr_value,b.att_name,b.att_type from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.goods_id=32 [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods_album` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `tp_goods_album` WHERE `goods_id` = 32  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_category`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `tp_category` [ RunTime:0.0120s ]
+SQL: SELECT `cat_id`,`cat_name`,`parent_id` FROM `tp_category` WHERE `cat_id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `cat_id`,`cat_name` FROM `tp_category` WHERE `parent_id` = 17 AND `is_show` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0100s ]
+SQL: SELECT `id`,`goods_name`,`shop_price`,`image_thumb` FROM `tp_goods` WHERE `is_on_sale` = 1 AND `is_best` = 1 AND `is_del` = 0 ORDER BY id desc LIMIT 3   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 78 行.
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\GoodsModel.class.php 第 54 行.
+SQL: SHOW COLUMNS FROM `tp_meb_browse` [ RunTime:0.0110s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8] Undefined variable: Browse D:\vhosts\tpshop\App\Runtime\Cache\Home\89f3955b4cd3d266de685a133a599d6f.php 第 351 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.072004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.072004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T23:50:26+08:00 ] 127.0.0.1 /index.php/Home/Cart/addCart
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 19 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T23:50:28+08:00 ] 127.0.0.1 /index.php/Home/Cart/cartList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0530s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0150s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\161504e2978cdff3c85667a68a0003dc.php 第 247 行.
+NOTIC: [8] Undefined variable: getCartTotal D:\vhosts\tpshop\App\Runtime\Cache\Home\161504e2978cdff3c85667a68a0003dc.php 第 320 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.051003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T23:50:31+08:00 ] 127.0.0.1 /index.php/Home/Order/addOrder
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Controller\OrderController.class.php 第 24 行.
+
+[ 2015-12-06T23:50:32+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0080s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-12-06T23:50:33+08:00 ] 127.0.0.1 /index.php/Home/Member/verify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0080s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0040s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T23:50:40+08:00 ] 127.0.0.1 /index.php/Home/Member/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: member D:\vhosts\tpshop\App\Home\Controller\BaseController.class.php 第 24 行.
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+NOTIC: [8] Undefined index: meb_id D:\vhosts\tpshop\App\Home\Model\CartModel.class.php 第 72 行.
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_member` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_member` WHERE `meb_name` = 'luoqi' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_cart` WHERE `goods_id` = 32 AND `goods_attr_id` = '80,82,85' AND `meb_id` = 2  [ RunTime:0.0010s ]
+SQL: INSERT INTO `tp_cart` (`goods_id`,`goods_attr_id`,`meb_id`,`goods_nums`) VALUES ('32','80,82,85','2','3') [ RunTime:0.1670s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-12-06T23:50:41+08:00 ] 127.0.0.1 /index.php/Home/Order/addOrder.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_cart` WHERE `meb_id` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0060s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_cart` WHERE `meb_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `tp_address` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `tp_address` WHERE `meb_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `tp_cart` WHERE `meb_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0010s ]
+SQL: SELECT * FROM `tp_cart` WHERE `meb_id` = 2  [ RunTime:0.0010s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: breadcrumb D:\vhosts\tpshop\App\Runtime\Cache\Home\08faa9f385af76b16a1570fbb542884b.php 第 223 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2015-12-06T23:50:47+08:00 ] 127.0.0.1 /index.php/Home/Order/flow
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_cart` WHERE `meb_id` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_goods` [ RunTime:0.0070s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0010s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_order` [ RunTime:0.0060s ]
+SQL: INSERT INTO `tp_order` (`address_id`,`shipping`,`payment`,`goods_amount`,`addtime`,`meb_id`,`order_sn`) VALUES ('3','1','1','600','1449417046','2','sn_56645956e1622') [ RunTime:0.2180s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_cart` WHERE `meb_id` = 2  [ RunTime:0.0000s ]
+SQL: SELECT `goods_name`,`image_thumb`,`shop_price` FROM `tp_goods` WHERE `id` = 32 LIMIT 1   [ RunTime:0.0000s ]
+SQL: select group_concat(concat(b.att_name,':',a.attr_value) separator '<br/>') attrs from tp_goods_attr a left join tp_attribute b on a.attr_id=b.id where a.id in (80,82,85) [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_order_goods` [ RunTime:0.0060s ]
+SQL: INSERT INTO `tp_order_goods` (`order_id`,`goods_id`,`goods_name`,`goods_attr_id`,`shop_price`,`goods_nums`) VALUES ('3','32','小小小','80,82,85','200','3') [ RunTime:0.1470s ]
+SQL: DELETE FROM `tp_cart` WHERE `meb_id` = 2 [ RunTime:0.2160s ]
+
+[ 2015-12-06T23:50:47+08:00 ] 127.0.0.1 /index.php/Home/Order/done/order_sn/sn_56645956e1622.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tp_cart` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `tp_cart` WHERE `meb_id` = 2  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `tp_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `tp_nav` WHERE `location` = 'middle' ORDER BY nav_order  [ RunTime:0.0000s ]
+

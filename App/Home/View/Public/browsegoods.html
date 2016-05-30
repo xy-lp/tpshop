@@ -1,0 +1,17 @@
+<div class="shop_bd_list_bk clearfix">
+    <div class="title">浏览过的商品</div>
+    <div class="contents clearfix">
+        <ul class="clearfix">
+            <volist name="Browse" id="bwvo">
+                <li class="clearfix">
+                    <div class="goods_name"><a href="__URL__/good/id/{$bwvo.id}">{$bwvo.goods_name}</a></div>
+                    <div class="goods_pic"><span class="goods_price">¥ {$bwvo.shop_price} </span><a href="__URL__/good/id/{$bwvo.id}"><img src="__PUBLIC__/Uploads/{$bwvo.image_thumb}" /></a></div>
+                    <div class="goods_xiaoliang">
+                        <span class="goods_xiaoliang_link"><a href="__URL__/good/id/{$bwvo.id}">去看看</a></span>
+                        <span class="goods_xiaoliang_nums">已销售<strong>99</strong>笔</span>
+                    </div>
+                </li>
+            </volist>
+        </ul>
+    </div>
+</div>
